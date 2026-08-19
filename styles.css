@@ -45,6 +45,13 @@ button {
   font: inherit;
 }
 
+.heading-line {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
 .container {
   width: min(calc(100% - 64px), var(--max-width));
   margin: 0 auto;
@@ -159,7 +166,7 @@ button {
 }
 
 .hero h1 {
-  max-width: 920px;
+  max-width: 1050px;
   margin: 0;
   font-size: clamp(54px, 7.2vw, 104px);
   line-height: 0.95;
@@ -244,7 +251,7 @@ button {
 .approach-heading h2,
 .closing h2 {
   margin: 0;
-  font-size: clamp(40px, 5vw, 70px);
+  font-size: clamp(40px, 4.2vw, 56px);
   line-height: 1.02;
   letter-spacing: -0.045em;
 }
@@ -696,7 +703,7 @@ button {
 
   .hero h1 {
     max-width: 620px;
-    font-size: clamp(46px, 14vw, 74px);
+    font-size: clamp(28px, 8.75vw, 74px);
   }
 
   .hero-copy {
@@ -719,7 +726,7 @@ button {
   .projects-head h2,
   .approach-heading h2,
   .closing h2 {
-    font-size: clamp(38px, 10vw, 56px);
+    font-size: clamp(24px, 7.5vw, 56px);
   }
 
   .service-row {
