@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ФОРМА — сайт строительной компании: генеральный подряд, коммерческое, промышленное и инфраструктурное строительство.">
+  <title>ФОРМА — строительная компания</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="ФОРМА, на главную">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">ФОРМА</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+        <a href="#about">О компании</a>
+        <a href="#services">Направления</a>
+        <a href="#projects">Проекты</a>
+        <a href="#approach">Подход</a>
+      </nav>
+
+      <a class="header-link" href="#projects">Наши проекты <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-image" src="assets/images/hero.webp" alt="Рабочие собирают башенный кран на строительной площадке">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="eyebrow light">Генеральный подряд и строительство</p>
+        <h1>Строим сложные объекты. От площадки до ввода.</h1>
+        <p class="hero-copy">Коммерческие, промышленные и инфраструктурные проекты с единым управлением сроками, качеством и строительными процессами.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Смотреть проекты</a>
+          <a class="text-link light" href="#services">Направления работ <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro section" id="about">
+      <div class="container intro-grid">
+        <div>
+          <p class="eyebrow">О компании</p>
+          <h2>Берём ответственность за весь строительный цикл.</h2>
+        </div>
+        <div class="intro-copy">
+          <p>ФОРМА объединяет проектное управление, строительные команды и технический контроль в одной системе. Это позволяет вести объект последовательно и без потери решений между этапами.</p>
+          <p>Работа начинается с подготовки площадки и графика, продолжается координацией подрядчиков и заканчивается передачей готового объекта заказчику.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Направления</p>
+          <h2>Работаем там, где важны точность, сроки и понятная ответственность.</h2>
+        </div>
+
+        <div class="service-list">
+          <article class="service-row">
+            <h3>Коммерческие объекты</h3>
+            <p>Офисные центры, общественные пространства, торговые и многофункциональные здания.</p>
+          </article>
+          <article class="service-row">
+            <h3>Промышленное строительство</h3>
+            <p>Производственные корпуса, инженерная инфраструктура, технические зоны и модернизация площадок.</p>
+          </article>
+          <article class="service-row">
+            <h3>Инфраструктура</h3>
+            <p>Дороги, мостовые сооружения, транспортные узлы и объекты городской инженерии.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="projects-head">
+          <div>
+            <p class="eyebrow">Проекты</p>
+            <h2>Объекты разного масштаба и назначения.</h2>
+          </div>
+          <div class="filters" aria-label="Фильтр проектов">
+            <button class="filter-button is-active" type="button" data-filter="all">Все</button>
+            <button class="filter-button" type="button" data-filter="commercial">Коммерческие</button>
+            <button class="filter-button" type="button" data-filter="industrial">Промышленные</button>
+            <button class="filter-button" type="button" data-filter="infrastructure">Инфраструктура</button>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" data-category="commercial">
+            <button class="project-image-button" type="button" data-lightbox="assets/images/project-office.webp" aria-label="Увеличить фотографию делового центра">
+              <img src="assets/images/project-office.webp" alt="Современное здание со стеклянным фасадом">
+            </button>
+            <div class="project-meta">
+              <div>
+                <h3>Деловой центр</h3>
+                <p>Коммерческое строительство</p>
+              </div>
+              <span>Генподряд</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="industrial">
+            <button class="project-image-button" type="button" data-lightbox="assets/images/project-industrial.webp" aria-label="Увеличить фотографию промышленного комплекса">
+              <img src="assets/images/project-industrial.webp" alt="Промышленный комплекс с производственными корпусами">
+            </button>
+            <div class="project-meta">
+              <div>
+                <h3>Производственный комплекс</h3>
+                <p>Промышленное строительство</p>
+              </div>
+              <span>Полный цикл</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="infrastructure">
+            <button class="project-image-button" type="button" data-lightbox="assets/images/project-infrastructure.webp" aria-label="Увеличить фотографию строительства мостового сооружения">
+              <img src="assets/images/project-infrastructure.webp" alt="Автокран на строительстве мостового сооружения">
+            </button>
+            <div class="project-meta">
+              <div>
+                <h3>Транспортная развязка</h3>
+                <p>Инфраструктура</p>
+              </div>
+              <span>Строительство</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="commercial">
+            <button class="project-image-button" type="button" data-lightbox="assets/images/project-logistics.webp" aria-label="Увеличить фотографию логистического центра">
+              <img src="assets/images/project-logistics.webp" alt="Многоэтажный логистический центр">
+            </button>
+            <div class="project-meta">
+              <div>
+                <h3>Логистический центр</h3>
+                <p>Коммерческое строительство</p>
+              </div>
+              <span>Генподряд</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="approach section" id="approach">
+      <div class="container approach-grid">
+        <div class="approach-heading">
+          <p class="eyebrow light">Подход</p>
+          <h2>Один проект. Одна команда. Один понятный процесс.</h2>
+        </div>
+        <div class="approach-steps">
+          <article>
+            <h3>Подготовка</h3>
+            <p>Разбираем исходные данные, риски, график и строительную логистику до выхода на площадку.</p>
+          </article>
+          <article>
+            <h3>Управление стройкой</h3>
+            <p>Координируем подрядчиков, снабжение, технический надзор и изменения по ходу проекта.</p>
+          </article>
+          <article>
+            <h3>Сдача объекта</h3>
+            <p>Закрываем исполнительную документацию, испытания и передачу объекта в эксплуатацию.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing section">
+      <div class="container closing-inner">
+        <p class="eyebrow">ФОРМА</p>
+        <h2>Строительство без разрыва между проектом, площадкой и результатом.</h2>
+        <a class="button button-dark" href="#top">Вернуться к началу</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="brand footer-logo" href="#top">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">ФОРМА</span>
+        </a>
+        <p>Генеральный подряд, промышленное и коммерческое строительство.</p>
+      </div>
+      <div class="footer-nav">
+        <div>
+          <span>Компания</span>
+          <a href="#about">О компании</a>
+          <a href="#approach">Подход</a>
+        </div>
+        <div>
+          <span>Работы</span>
+          <a href="#services">Направления</a>
+          <a href="#projects">Проекты</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 ФОРМА</span>
+      <span>Строительство по России</span>
+    </div>
+  </footer>
+
+  <div class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Просмотр изображения">
+    <button class="lightbox-close" type="button" aria-label="Закрыть">×</button>
+    <img src="" alt="Увеличенное изображение проекта">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
