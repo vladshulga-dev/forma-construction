@@ -277,7 +277,7 @@ button {
 
 .section-heading {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: minmax(140px, 0.5fr) minmax(0, 2.5fr);
   gap: 54px;
   align-items: start;
   margin-bottom: 66px;
@@ -722,11 +722,14 @@ button {
   }
 
   .intro h2,
-  .section-heading h2,
   .projects-head h2,
   .approach-heading h2,
   .closing h2 {
     font-size: clamp(24px, 7.5vw, 56px);
+  }
+
+  .section-heading h2 {
+    font-size: clamp(19px, 5.7vw, 43px);
   }
 
   .service-row {
